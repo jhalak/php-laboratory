@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php
+
+require "vendor/autoload.php";
+
+use Symfony\Component\Console\Application;
+
+$application = new Application('Tomy', '2.0');
+$application->add(new Speaker());
+$application->run();
